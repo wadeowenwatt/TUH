@@ -46,7 +46,6 @@ public class GradientDescent {
             }
             xstart[0] = xstart[0] - t0 * gra[0];
             xstart[1] = xstart[1] - t0 * gra[1];
-            count++;
         }
         rt[0] = xstart[0]; 
         rt[1] = xstart[1];
@@ -67,7 +66,7 @@ public class GradientDescent {
         double[] result1 = test.backtrackinglinesearch(alpha, beta, t0, x01);
         final long end1 = System.currentTimeMillis();
 
-        System.out.println("Running time = " + (end1 - start1) + " s");
+        System.out.println("Run time = " + (end1 - start1) + " s");
         System.out.println("RESULT OF x01 = ("+ result1[0] + ", " + result1[1] +")");
 
         System.out.println();
@@ -76,7 +75,7 @@ public class GradientDescent {
         double[] result2 = test.backtrackinglinesearch(alpha, beta, t0, x02);
         final long end2 = System.currentTimeMillis();
         
-        System.out.println("Running time = " + (end2 - start2) + " s");
-        System.out.println("RESULT OF x01 = ("+ result2[0] + ", " + result2[1] +")");
+        System.out.println("Run time = " + (end2 - start2) + " s");
+        System.out.println("RESULT OF x02 = ("+ result2[0] + ", " + result2[1] +")");
     }
 }
